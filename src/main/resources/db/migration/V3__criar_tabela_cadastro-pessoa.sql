@@ -1,6 +1,6 @@
 CREATE TABLE tb_cadastro
 (
-    codigo     bigint       PRIMARY KEY,
+    codigo     serial    PRIMARY KEY,
     cpf        varchar(11)  NOT NULL,
     data       date         NOT NULL,
     email      varchar(200) DEFAULT NULL,

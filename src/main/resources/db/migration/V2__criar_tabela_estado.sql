@@ -1,6 +1,6 @@
 CREATE TABLE tb_estado
 (
-    codigo bigint       PRIMARY KEY,
+    codigo serial    PRIMARY KEY,
     nome   varchar(100) NOT NULL,
     PRIMARY KEY (codigo)
 ) ENGINE = InnoDB
