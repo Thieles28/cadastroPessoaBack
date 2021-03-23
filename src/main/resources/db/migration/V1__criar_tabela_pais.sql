@@ -1,6 +1,6 @@
 CREATE TABLE tb_pais
 (
-    codigo bigint       NOT NULL AUTO_INCREMENT,
+    codigo bigint       PRIMARY KEY,
     nome   varchar(100) NOT NULL,
     PRIMARY KEY (codigo)
 ) ENGINE = InnoDB
