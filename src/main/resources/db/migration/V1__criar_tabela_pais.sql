@@ -1,10 +1,10 @@
-# CREATE TABLE IF NOT EXISTS tb_pais
-# (
-#     codigo bigint       NOT NULL AUTO_INCREMENT,
-#     nome   varchar(100) NOT NULL,
-#     PRIMARY KEY (codigo)
-# ) ENGINE = InnoDB
-#   DEFAULT CHARSET = utf8;
+/*CREATE TABLE IF NOT EXISTS tb_pais
+(
+    codigo bigint       NOT NULL AUTO_INCREMENT,
+    nome   varchar(100) NOT NULL,
+    PRIMARY KEY (codigo)
+) ENGINE = InnoDB
+  DEFAULT CHARSET = utf8;*/
 
 CREATE TABLE IF NOT EXISTS tb_pais
 (
