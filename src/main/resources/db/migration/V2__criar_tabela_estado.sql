@@ -1,10 +1,18 @@
-CREATE TABLE tb_estado
+# CREATE TABLE IF NOT EXISTS tb_estado
+# (
+#     codigo bigint       NOT NULL AUTO_INCREMENT,
+#     nome   varchar(100) NOT NULL,
+#     PRIMARY KEY (codigo)
+# ) ENGINE = InnoDB
+#   DEFAULT CHARSET = utf8;
+
+CREATE TABLE IF NOT EXISTS tb_estado
 (
-    codigo serial    PRIMARY KEY,
+    codigo SERIAL,
     nome   varchar(100) NOT NULL,
-    PRIMARY KEY (codigo)
-) ENGINE = InnoDB
-  DEFAULT CHARSET = utf8;
+    CONSTRAINT pk_estado PRIMARY KEY (codigo)
+);
+
 
 INSERT INTO
     tb_estado(nome)
