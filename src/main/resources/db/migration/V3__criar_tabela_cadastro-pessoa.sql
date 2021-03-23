@@ -1,4 +1,4 @@
-CREATE TABLE IF NOT EXISTS tb_cadastro
+CREATE TABLE tb_cadastro
 (
     codigo     bigint       NOT NULL AUTO_INCREMENT,
     cpf        varchar(11)  NOT NULL,

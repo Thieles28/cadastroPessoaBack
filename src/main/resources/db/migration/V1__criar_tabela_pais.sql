@@ -1,4 +1,4 @@
-CREATE TABLE IF NOT EXISTS tb_pais
+CREATE TABLE tb_pais
 (
     codigo bigint       NOT NULL AUTO_INCREMENT,
     nome   varchar(100) NOT NULL,
