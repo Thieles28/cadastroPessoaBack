@@ -1,5 +1,5 @@
 /*MYSQL*/
-/*CREATE TABLE IF NOT EXISTS tb_cadastro
+CREATE TABLE IF NOT EXISTS tb_cadastro
 (
     codigo     bigint       NOT NULL AUTO_INCREMENT,
     cpf        varchar(11)  NOT NULL,
@@ -16,9 +16,9 @@
     CONSTRAINT fk_estado FOREIGN KEY (cod_estado) REFERENCES tb_estado (codigo),
     CONSTRAINT fk_pais FOREIGN KEY (cod_pais) REFERENCES tb_pais (codigo),
     CONSTRAINT ck_sexo CHECK ((sexo in (_utf8mb4'M', _utf8mb4'F')))
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;*/
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-/*INSERT INTO tb_cadastro (cpf, `data`, email, cod_pais, cod_estado, nome, sexo)
+INSERT INTO tb_cadastro (cpf, `data`, email, cod_pais, cod_estado, nome, sexo)
 VALUES ('02030145106', '1987-10-29', 'thieles@gmailcom', 33, 26, 'Thieles', 'M'),
        ('16481965004', '1981-10-23', 'ricardo@gmailcom', 33, 26, 'Ricardo', 'M'),
        ('46435225001', '1982-10-20', 'jessica@gmailcom', 33, 26, 'Jessica', 'F'),
@@ -32,10 +32,10 @@ VALUES ('02030145106', '1987-10-29', 'thieles@gmailcom', 33, 26, 'Thieles', 'M')
        ('00835876080', '1999-10-11', 'rodriog@gmailcom', 33, 26, 'Rodrigo', 'M'),
        ('96553799067', '1983-10-13', 'romilson@gmailcom', 33, 26, 'Romilson', 'M'),
        ('73390792031', '1985-10-20', 'rogerio@gmailcom', 33, 26, 'Rogério', 'M'),
-       ('38088914086', '1987-10-19', 'everton@gmailcom', 33, 26, 'Everton', 'M');*/
+       ('38088914086', '1987-10-19', 'everton@gmailcom', 33, 26, 'Everton', 'M');
 
 /*POSTGRESQL*/
-CREATE TABLE IF NOT EXISTS tb_cadastro
+/*CREATE TABLE IF NOT EXISTS tb_cadastro
 (
     codigo     serial,
     cpf        varchar(11)  NOT NULL UNIQUE,
@@ -66,4 +66,4 @@ VALUES ('02030145106', '1987-10-29', 'thieles@gmailcom', 33, 26, 'Thieles', 'M')
        ('00835876080', '1999-10-11', 'rodriog@gmailcom', 33, 26, 'Rodrigo', 'M'),
        ('96553799067', '1983-10-13', 'romilson@gmailcom', 33, 26, 'Romilson', 'M'),
        ('73390792031', '1985-10-20', 'rogerio@gmailcom', 33, 26, 'Rogério', 'M'),
-       ('38088914086', '1987-10-19', 'everton@gmailcom', 33, 26, 'Everton', 'M');
+       ('38088914086', '1987-10-19', 'everton@gmailcom', 33, 26, 'Everton', 'M');*/

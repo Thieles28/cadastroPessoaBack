@@ -1,17 +1,17 @@
-/*CREATE TABLE IF NOT EXISTS tb_pais
+CREATE TABLE IF NOT EXISTS tb_pais
 (
     codigo bigint       NOT NULL AUTO_INCREMENT,
     nome   varchar(100) NOT NULL,
     PRIMARY KEY (codigo)
 ) ENGINE = InnoDB
-  DEFAULT CHARSET = utf8;*/
+  DEFAULT CHARSET = utf8;
 
-CREATE TABLE IF NOT EXISTS tb_pais
+/*CREATE TABLE IF NOT EXISTS tb_pais
 (
     codigo serial,
     nome   varchar(100) NOT NULL,
     CONSTRAINT pk_pais PRIMARY KEY (codigo)
-);
+);*/
 INSERT INTO tb_pais (nome)
 VALUES ('AFEGANISTÃO'),
        ('ACROTÍRI E DECELIA'),
